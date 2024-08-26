@@ -30,7 +30,7 @@
     <p>
        Because of the register key, the clarinet could play a lot more notes than the chalameau. This opened up a whole lot more possibilities for songs and pieces that could be played by the clarinet.
     </p>
-    <table> <!--Little table graphic to show the difference in range between the clarinet and chalameau-->
+    <table onclick="tableNoise()"> <!--Little table graphic to show the difference in range between the clarinet and chalameau-->
       <tr>
         <th>Chalameau</th>
         <th>Clarinet</th>
@@ -58,18 +58,26 @@
 	  
 	  <script>
 	  function dennerCredit() {
-		window.location.replace("https://www.johndenner.com/johann-denner/");
+		window.open("https://www.johndenner.com/johann-denner/");
 	  }
 	  </script>
 	  <script>
 	  function clarinetCredit() {
-		window.location.replace("https://www.shutterstock.com/search/clarinet-white-background");
+		window.open("https://www.shutterstock.com/search/clarinet-white-background");
 	  }
 	  </script>
 	  <script>
 	  function registerCredit() {
-		window.location.replace("https://phamoxmusic.com/parts-of-a-clarinet/");
+		window.open("https://phamoxmusic.com/parts-of-a-clarinet/");
+	  }
+	  </script>
+	  <script>
+	  function tableNoise() {
+		var audio = new Audio('audio_file.mp3');
+		audio.play();
 	  }
 	  </script>
   </body>
 </html>
+
+
