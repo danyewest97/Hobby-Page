@@ -29,9 +29,8 @@ img{
 }
 
 iframe{
-	border-style: solid;
+	border-style: solid lightgray;
 	border-width: 2px;
-	border-color: lightgray;
 }
 
 table{
@@ -65,6 +64,18 @@ a:hover {
 	font-size: 18px;
 	border-style: none;
 	padding-top: 0px;
+}
+
+.clarinet_mask {
+	/* mask image credit: https://www.pinterest.com/pin/clarinet-silhouette-clip-art-vector-clip-art-online-royalty-clipart-best-clipart-best--177681147773501336/ */ 
+	/* -webkit-mask-image: clarinet_silhouette.png;
+	mask-image: clarinet_silhouette.png;
+	mask-repeat: no-repeat;
+	mask-mode: alpha;
+	mask-position: center; */
+	
+	/* Image mask not working, not sure why */
+	mask: clarinet_silhouette.png no-repeat;
 }
 
 img:hover {
