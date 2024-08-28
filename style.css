@@ -23,11 +23,6 @@ p{
 	display: block;
 }
 
-img{
-	border-style: solid;
-	border-width: 3px;
-}
-
 iframe{
 	border-style: solid lightgray;
 	border-width: 2px;
@@ -66,6 +61,11 @@ a:hover {
 	padding-top: 0px;
 }
 
+.hoverimage {
+	border: 3px solid blue;
+}
+
+
 .noisy_table {
 	
 }
@@ -77,12 +77,13 @@ a:hover {
 }
 
 .clarinet_mask_border {
-	position: absolute;
+	position: relative;
+	top: 100px;
 	mask: url(clarinet_silhouette.png) no-repeat;
 	mask-size: 53%;
 }
 
-img:hover {
+.hoverimage:hover {
 	border-color: lightblue;
 }
 
