@@ -75,7 +75,7 @@ a:hover {
 	mask-position: center; */
 	
 	/* Image mask not working, not sure why */
-	mask: clarinet_silhouette.png no-repeat;
+	mask: url(clarinet_silhouette.png) no-repeat;
 }
 
 img:hover {
