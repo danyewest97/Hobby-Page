@@ -1,63 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+	<!--Thought this was a good title because this page will be/is about the clarinet, which is one of my hobbies, and I feel like this title is short, sweet, and sounds good-->
+	<title>All About the Clarinet</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="script.js"></script>
 	<link rel="stylesheet" href="style.css">
-    <title>All About the Clarinet</title> <!--Thought this was a good title because this page will be/is about the clarinet, which is one of my hobbies, and I feel like this title is short, sweet, and sounds good-->
+    
   </head>
   <body>
+  
     <!--Note: if accessibility across different web browsers is an issue, I might change from webp to png-->
     <h1>
       All About the Clarinet <!--I just decided to make the header the same as the title, since I thought it sounded good-->
     </h1>
+	
     <p>
       The clarinet is a fairly old instrument, invented around the year 1690 by Johann Christoph Denner. It was based on an earlier instrument called the chalumeau. However, the chalumeau didn't have a very high range;
       it couldn't play very high notes. So, Denner added the "register key" that was a key that let out air near the top of the instrument and allowed it to play higher notes. 
     </p>
-    <img id="denner" src="johann_denner.webp" alt="The creator of the clarinet, Johann Christoph Denner" onclick="dennerCredit()"> <!--Adding a photo of Johann Denner because the previous paragraph was talking about him. Same as below, I used webp for superior detail and performance over png and jpg
-    Image credit: https://www.johndenner.com/johann-denner/-->
+	
+	<!--Adding a photo of Johann Denner because the previous paragraph was talking about him. Same as below, I used webp for superior detail and performance over png and jpg
+    Image credit: https://www.johndenner.com/johann-denner/ -->
+	<a href="https://www.johndenner.com/johann-denner/">
+		<img id="denner" src="johann_denner.webp" alt="The creator of the clarinet, Johann Christoph Denner">
+	</a>
+	
     <p id="subscript">
       (A photo of Johann Christoph Denner, click it to see the image credit)
     </p>
+	
 	<p>
 		The clarinet itself is a long, usually wooden cylinder, with holes cut out for air to escape. This allows for players to be able to change the pitch of the instrument by covering holes.
 	</p>
-    <img id="clarinet" src="clarinet.webp" alt="A picture of a modern clarinet" onclick="clarinetCredit()"> <!--Adding an image of a clarinet for reference as to what a clarinet looks like. I used webp as the format because I wanted a lot of detail and, 
-    although webp has less support on different browsers, it has better performance and detail than png
-    Image credit: https://www.shutterstock.com/search/clarinet-white-background-->
+	
+	<!--Adding an image of a clarinet for reference as to what a clarinet looks like. I used webp as the format because I wanted a lot of detail and, 
+    although webp has less support on different browsers, it has better performance and detail than pngImage credit: https://www.shutterstock.com/search/clarinet-white-background -->
+	<a href="https://www.shutterstock.com/search/clarinet-white-background">
+		<img id="clarinet" src="clarinet.webp" alt="A picture of a modern clarinet"> 
+	</a>
+	
     <p id="subscript"> 
 		(Photo of a clarinet, click it to see the image credit)
 	</p>
+	
     <p>
        Because of the register key, the clarinet could play a lot more notes than the chalumeau, due to the register key allowing much easier "overblowing" of notes, which could raise a note's pitch by 12 full notes. This opened up a whole lot more possibilities for songs and pieces that could be played by the clarinet.
     </p>
-    <table onclick="tableNoise()"> <!--Little table graphic to show the difference in range between the clarinet and chalumeau-->
+	
+    <table class="noisy_table"> <!--Little table graphic to show the difference in range between the clarinet and chalumeau-->
+	
       <tr>
         <th>Chalumeau</th>
         <th>Clarinet</th>
       </tr>
+	  
       <tr>
         <td>12 notes</td>
         <td><b>41 notes!</b></td>
       </tr>	
+	  
     </table>
+	
+	<!-- line break -->
 	<p id="no_border"><br></p>
-    <img id="register" src="register_key.webp" alt="Picture of the register key on a clarinet"
-      width="717"
-      height="478" onclick="registerCredit()"> <!--Again, I used webp for the best performance and detail combined
-    Image credit: https://phamoxmusic.com/parts-of-a-clarinet/-->
+	
+	<!--Again, I used webp for the best performance and detail combined. Image credit: https://phamoxmusic.com/parts-of-a-clarinet/ -->
+	<a href="https://phamoxmusic.com/parts-of-a-clarinet/">
+		<img id="register" src="register_key.webp" alt="Picture of the register key on a clarinet"
+		  width="717"
+		  height="478">
+	</a>
+	  
     <p id="subscript">
       (Photo of the register key on a clarinet, click it to see the image credit)
     </p>
+	
     <p>
       To learn more about the clarinet, you can go to <a href="https://en.wikipedia.org/wiki/Clarinet" target="_blank">this website</a> (click on the link or see the website below) <br>
     </p>
+	
     <iframe src="https://en.wikipedia.org/wiki/Clarinet" title="Wikipedia page with info about the clarinet"
       width="1300"
-      height="550"></iframe>
-	  
+      height="550">
+	</iframe>
+	
 	<p>
 			Here are examples of the chalumeau and clarinet being played. One thing to notice is that the clarinet plays much higher notes, made possible with the register key.
 	</p>
+	
 	
 	<h2>
 		Chalumeau:
@@ -73,36 +104,14 @@
 		src="https://youtube.com/embed/SYLJcbmOp3s">
 	</iframe>
 	
+	
 	<div class="clarinet_mask">
-	<img onclick="sheetMusicCredit()" src="clarinet_mask.jpg" alt="sheet music masked with the silhouette of a clarinet"></img> <!--image credit: https://www.123rf.com/clipart-vector/old_sheet_music.html -->
+		<a href="https://www.123rf.com/clipart-vector/old_sheet_music.html">
+			<img src="clarinet_mask.jpg" alt="sheet music masked with the silhouette of a clarinet"> <!--image credit: https://www.123rf.com/clipart-vector/old_sheet_music.html -->
+		</a>
 	</div>
+	
 	  
-	  <script>
-	  function dennerCredit() {
-		window.open("https://www.johndenner.com/johann-denner/");
-	  }
-	  </script>
-	  <script>
-	  function clarinetCredit() {
-		window.open("https://www.shutterstock.com/search/clarinet-white-background");
-	  }
-	  </script>
-	  <script>
-	  function registerCredit() {
-		window.open("https://phamoxmusic.com/parts-of-a-clarinet/");
-	  }
-	  </script>
-	  <script>
-	  function tableNoise() {
-		var audio = new Audio('audio_file.mp3');
-		audio.play();
-	  }
-	  </script>
-	  <script>
-	  function sheetMusicCredit() {
-		window.open("https://www.123rf.com/clipart-vector/old_sheet_music.html");
-	  }
-	  </script>
   </body>
 </html>
 
