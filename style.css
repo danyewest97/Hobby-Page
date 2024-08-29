@@ -74,15 +74,15 @@ a:hover {
 	/* mask image credit: https://www.pinterest.com/pin/clarinet-silhouette-clip-art-vector-clip-art-online-royalty-clipart-best-clipart-best--177681147773501336/ */ 
 	mask: url(clarinet_silhouette.png) no-repeat;
 	position: relative;
-	bottom: 200px;
-	right: 425px;
+	bottom: 165px;
+	right: 415px;
 	mask-size: 50%;
 }
 
 .clarinet_mask_border {
 	position: relative;
 	mask: url(clarinet_silhouette.png) no-repeat;
-	mask-size: 55%;
+	mask-size: 60%;
 }
 
 .hoverimage:hover {
