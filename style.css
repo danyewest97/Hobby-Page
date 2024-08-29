@@ -78,7 +78,8 @@ a:hover {
 
 .clarinet_mask_border {
 	position: relative;
-	right: 414px;
+	top: 100px;
+	right: 500px;
 	mask: url(clarinet_silhouette.png) no-repeat;
 	mask-size: 53%;
 }
